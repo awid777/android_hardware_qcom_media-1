@@ -38,6 +38,9 @@ libOmxVdec-def += -DPROCESS_EXTRADATA_IN_OUTPUT_PORT
 libOmxVdec-def += -D_COPPER_
 endif
 
+# Disable here so it can be enabled globally
+libOmxVdec-def += -fno-strict-aliasing
+
 libOmxVdec-def += -D_ANDROID_ICS_
 
 #ifeq ($(TARGET_USES_ION),true)
